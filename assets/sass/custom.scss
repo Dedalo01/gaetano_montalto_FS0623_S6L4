@@ -1,0 +1,91 @@
+@import "../bootstrap/scss/bootstrap.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  font-size: 95%;
+}
+
+// main
+main #hero {
+  background-color: #7550fe;
+  color: white;
+
+  #text-hero {
+    h1 {
+      font-weight: bold;
+    }
+
+    p {
+      color: #bda9ff;
+    }
+  }
+}
+
+// info section
+.info-box {
+  margin: 1em 0;
+}
+
+.info-svg {
+  background-color: #ffeeda;
+  border-radius: 50%;
+  height: 2.5em;
+  width: 2.5em;
+  margin-right: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  svg {
+    display: block;
+
+    fill: #c38135;
+  }
+}
+
+.info-text {
+  p {
+    margin: 0.2em 0;
+
+    &:first-child {
+      font-weight: bold;
+    }
+  }
+}
+
+// other section
+.star {
+  svg {
+    fill: #ffaa46;
+  }
+
+  p {
+    &:first-of-type {
+      color: #ffaa46;
+    }
+
+    color: lightgrey;
+  }
+}
+
+.money-cost {
+  p {
+    &:first-of-type {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    color: lightgrey;
+    text-decoration: line-through;
+  }
+}
